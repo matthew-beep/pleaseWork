@@ -41,8 +41,8 @@ export default function Login() {
                     <AnimatePresence>
                         {isVisible && <Hint key="hint" text={text} isVisible={isVisible} onCloseBackdrop={handleCloseClick}/>}
                     </AnimatePresence>
-                    <div className="border 1px solid flex flex-col justify-center items-center w-11/12 h-full">
-                        <h1 className='text-4xl text-[#800020]'>Login</h1>
+                    <div className="flex flex-col justify-center items-center w-11/12 h-full">
+                        <h1 className='text-4xl text-[#800020] mb-5'>Login</h1>
                         <div className="flex flex-col w-9/12 my-5">
                             <label for="name" className="text-lg text-[#800020] font-bold">Username:</label>
                             <input type="text" id="name" name="name" className="rounded-lg bg-[#F0F0F0] border-2 border-[#CCCCCC] py-2 focus:border-blue-500"/>
@@ -60,8 +60,19 @@ export default function Login() {
                             Login
                         </motion.button>
                         <div className="flex flex-col">
-                            <p className="hover:cursor-pointer mt-3" onClick={handleUserClick}>Forgot Username?</p>
-                            <p className="hover:cursor-pointer mt-1" onClick={handlePassClick}>Forgot Password?</p>
+                            <motion.p className="hover:cursor-pointer mt-6" 
+                            onClick={handleUserClick}
+                            whileHover={{color:'#FFFFFF'}}
+                            >
+                                Forgot Username?
+                            </motion.p>
+                            <motion.p 
+                            className="hover:cursor-pointer mt-3" 
+                            onClick={handlePassClick}
+                            whileHover={{color:'#FFFFFF'}}
+                            >
+                                Forgot Password?
+                            </motion.p>
                         </div>
                     </div>
                 </motion.div>
