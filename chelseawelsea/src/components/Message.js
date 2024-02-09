@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import React, { useState } from 'react';
+import Yes from './yes.js';
 import gif from '../img/valentines-day-icegif-27.gif';
 
 export default function Hint(props) {
     const [position, setPosition] = useState({ left: 0, top: 0 });
     const [message, setMessage] = useState(false);
     const [gif, setGif] = useState(false);
-    const maxWidth = 100; // Adjust as needed
-    const maxHeight = 200;
+    const [modal, setModal] = useState(false);
+    const maxWidth = -200; // Adjust as needed
+    const maxHeight = -500;
 
     const getRandomPosition = () => {
         const newPosition = {
@@ -27,10 +29,14 @@ export default function Hint(props) {
         setGif(true);
     }
 
+    const handleYes = () => {
+        setModal(true);
+    }
+
     let askOut = "Will you be my Valentine?";
     return (
         <div className="h-full w-full flex flex-col justify-around px-5 items-center py-8 border-2">
-            <motion.h1 className="font-bold text-5xl text-[#800020] mt-100 border-2"
+            <motion.h1 className="font-bold text-4xl text-[#800020] mt-100 border-2"
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.5}}
@@ -67,6 +73,7 @@ export default function Hint(props) {
                 <motion.button className="w-full mr-2 px-5 py-2 bg-[#800020] text-white mt-5 rounded-md"
                 whileHover={{color: '#FF5733', backgroundColor: '#FFFFFF'}}
                 whileTap={{scale:0.9}}
+                onClick={handleYes}
                 >Yes</motion.button>
                 <motion.button
                 className="w-full ml-2 px-5 py-2 bg-[#800020] text-white mt-5 rounded-md"
@@ -79,6 +86,7 @@ export default function Hint(props) {
                 No
                 </motion.button>
             </div>
+            {modal && <Yes />}
         </div>
     )
 }
