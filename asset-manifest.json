@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pleaseWork/static/css/main.0fa51b95.css",
-    "main.js": "/pleaseWork/static/js/main.e9004bf2.js",
+    "main.css": "/pleaseWork/static/css/main.05360580.css",
+    "main.js": "/pleaseWork/static/js/main.d609a3d1.js",
     "static/js/592.d81b2b48.chunk.js": "/pleaseWork/static/js/592.d81b2b48.chunk.js",
     "static/media/valentines-day-icegif-27.gif": "/pleaseWork/static/media/valentines-day-icegif-27.fed53ef4911f07afab7a.gif",
     "index.html": "/pleaseWork/index.html",
-    "main.0fa51b95.css.map": "/pleaseWork/static/css/main.0fa51b95.css.map",
-    "main.e9004bf2.js.map": "/pleaseWork/static/js/main.e9004bf2.js.map",
+    "main.05360580.css.map": "/pleaseWork/static/css/main.05360580.css.map",
+    "main.d609a3d1.js.map": "/pleaseWork/static/js/main.d609a3d1.js.map",
     "592.d81b2b48.chunk.js.map": "/pleaseWork/static/js/592.d81b2b48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fa51b95.css",
-    "static/js/main.e9004bf2.js"
+    "static/css/main.05360580.css",
+    "static/js/main.d609a3d1.js"
   ]
 }
