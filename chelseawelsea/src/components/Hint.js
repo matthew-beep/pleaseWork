@@ -9,6 +9,7 @@ export default function Hint(props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                transition={{duration: 0.1}}
             >
                 <div className="flex flex-col items-center">
                     <h2 className="font-bold text-xl">Hint:</h2>
