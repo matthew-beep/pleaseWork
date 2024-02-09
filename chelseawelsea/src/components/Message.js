@@ -35,8 +35,8 @@ export default function Hint(props) {
 
     let askOut = "Will you be my Valentine?";
     return (
-        <div className="h-full w-full flex flex-col justify-around px-5 items-center py-8 border-2">
-            <motion.h1 className="font-bold text-4xl text-[#800020] mt-100 border-2"
+        <div className="h-full w-full flex flex-col justify-around px-5 items-center py-8">
+            <motion.h1 className="font-bold text-4xl text-[#800020] mt-100"
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.5}}
